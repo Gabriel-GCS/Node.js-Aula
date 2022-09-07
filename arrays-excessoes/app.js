@@ -30,5 +30,3 @@ try {
 } catch (e) {
     console.log('Nao foi possivel executar o pedido de compra.')
 }
-
-
