@@ -1,10 +1,10 @@
 const readLine = require('readline').createInterface({
     input: process.stdin,
     output: process.stdout
-})
+});
 
-console.log('Este programa vai checar se vc tem mais de 18 anos, e se tem habilitação para entrar no kart.')
-console.log('e verificar se esta cadastrado no horario.')
+console.log('Este programa vai checar se vc tem mais de 18 anos, e se tem habilitação para entrar no kart.');
+console.log('e verificar se esta cadastrado no horario.');
 
 readLine.question('Quantos anos vc tem?', ano =>{
 
@@ -22,16 +22,16 @@ readLine.question('Quantos anos vc tem?', ano =>{
                             console.log(`Voce tem acesso ao kart ${nome}.`);
                             break;
                         default:
-                            console.log('Seu nome não esta na lista.')
+                            console.log('Seu nome não esta na lista.');
                     }
                 })
             }
             else{
-                console.log('Voce n tem habilitação, não pode acessar o kart.')
+                console.log('Voce n tem habilitação, não pode acessar o kart.');
             }
         })
     }
     else{
-        console.log('Voce é de menor, não pode acessar o kart.')
+        console.log('Voce é de menor, não pode acessar o kart.');
     }
 })
